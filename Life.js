@@ -1,6 +1,6 @@
 
 
-alert("hi");
+
 window.onload = function(){
 	var simSpeed = 500;
 	document.onkeypress = function(e){
@@ -13,6 +13,9 @@ window.onload = function(){
 	var startSim = false;
 	window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
                               window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+	var controls = document.getElementById("controls");
+	controls.style.opacity = 0;
 
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
