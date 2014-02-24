@@ -7,6 +7,7 @@ window.onload = function(){
 		e =e || window.event;
 		if(e.keyCode == 119) simSpeed = simSpeed * 0.9;
 		if(e.keyCode == 115) simSpeed = simSpeed * 1.1;
+		if(e.keyCode == 32) startSim = true;
 	}
 	var start = null;
 	var startSim = false;
